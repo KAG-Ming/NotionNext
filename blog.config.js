@@ -181,7 +181,7 @@ const BLOG = {
     process.env.NEXT_PUBLIC_PRISM_THEME_DARK_PATH ||
     'https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css', // 深色模式主题
 
-  CODE_MAC_BAR: process.env.NEXT_PUBLIC_CODE_MAC_BAR || true, // 代码左上角显示mac的红黄绿图标
+  CODE_MAC_BAR: process.env.NEXT_PUBLIC_CODE_MAC_BAR || false, // 代码左上角显示mac的红黄绿图标
   CODE_LINE_NUMBERS: process.env.NEXT_PUBLIC_CODE_LINE_NUMBERS || false, // 是否显示行号
   CODE_COLLAPSE: process.env.NEXT_PUBLIC_CODE_COLLAPSE || true, // 是否支持折叠代码框
   CODE_COLLAPSE_EXPAND_DEFAULT:
@@ -241,7 +241,7 @@ const BLOG = {
 
   //   ********动态特效相关********
   // 鼠标点击烟花特效
-  FIREWORKS: process.env.NEXT_PUBLIC_FIREWORKS || false, // 开关
+  FIREWORKS: process.env.NEXT_PUBLIC_FIREWORKS || true, // 开关
   // 烟花色彩，感谢 https://github.com/Vixcity 提交的色彩
   FIREWORKS_COLOR: [
     '255, 20, 97',
@@ -321,6 +321,20 @@ const BLOG = {
       url: 'https://music.163.com/song/media/outer/url?id=2603055751.mp3',
       cover:
         'https://p2.music.126.net/6v4cQ_RXOwGLsNftTGdeaw==/109951169730741953.jpg'
+    },
+    {
+      name: 'Hymnus Ad Bacchum',
+      artist: 'The 1999',
+      url: 'https://music.163.com/song/media/outer/url?id=2160823413.mp3',
+      cover:
+        'https://p2.music.126.net/AvytvVesR3ne5NU2GdscvA==/109951169632825020.jpg'
+    },
+    {
+      name: 'Beyond the way',
+      artist: 'Giga / Vivid BAD SQUAD / 初音ミク',
+      url: 'https://music.163.com/song/media/outer/url?id=2109714414.mp3',
+      cover:
+        'https://p1.music.126.net/2Um_WIOaQurvYly2c8YdVw==/109951169172648660.jpg'
     }
   ],
   MUSIC_PLAYER_METING: process.env.NEXT_PUBLIC_MUSIC_PLAYER_METING || false, // 是否要开启 MetingJS，从平台获取歌单。会覆盖自定义的 MUSIC_PLAYER_AUDIO_LIST，更多配置信息：https://github.com/metowolf/MetingJS
