@@ -9,7 +9,7 @@ import { useEffect } from 'react'
  * @returns
  */
 export default function Live2D() {
-  const { theme } = useGlobal()
+  const { theme, switchTheme } = useGlobal()
   const showPet = JSON.parse(siteConfig('WIDGET_PET'))
   const petLink = siteConfig('WIDGET_PET_LINK')
   const petSwitchTheme = siteConfig('WIDGET_PET_SWITCH_THEME')
@@ -35,7 +35,9 @@ export default function Live2D() {
   }, [theme])
 
   function handleClick() {
-    window.location.href = "https://blog.tangly1024.com";
+    if (petSwitchTheme) {
+      switchTheme()
+    }
   }
 
   if (!showPet) {
