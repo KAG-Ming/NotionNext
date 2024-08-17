@@ -35,9 +35,7 @@ export default function Live2D() {
   }, [theme])
 
   function handleClick() {
-    if (petSwitchTheme) {
-      switchTheme()
-    }
+    window.location.href = "https://blog.tangly1024.com";
   }
 
   if (!showPet) {
